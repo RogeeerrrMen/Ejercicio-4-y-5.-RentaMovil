@@ -8,11 +8,11 @@ public abstract class Cliente {
     private int alquileresActivos;
     protected Cliente(String id, String nombre, ArrayList<TipoLicencia> licencias) {
 
-        if (id == null || id.trim().isEmpty()) {
+        if (id == null || id.isEmpty()) {
             throw new IllegalArgumentException("El identificador no puede estar vacio.");
         }
 
-        if (nombre == null || nombre.trim().isEmpty()) {
+        if (nombre == null || nombre.isEmpty()) {
             throw new IllegalArgumentException("El nombre no puede estar vacio.");
         }
 
@@ -66,7 +66,7 @@ public abstract class Cliente {
             alquileresActivos--;
         }
     }
-    
+
     public String getId() {
     return id;
     }

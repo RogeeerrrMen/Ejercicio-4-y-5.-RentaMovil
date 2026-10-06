@@ -9,7 +9,7 @@ public abstract class Vehiculo {
 
     protected Vehiculo(String placa, String marca, String modelo, double tarifaDiaria) {
 
-        if (placa == null || placa.trim().isEmpty()) {
+        if (placa == null || placa.isEmpty()) {
 
         throw new IllegalArgumentException("La placa no puede estar vacia.");
 
