@@ -30,26 +30,25 @@ public class VistaConsola {
     public int leerEntero(String mensaje) {
 
         System.out.print(mensaje);
-        return scanner.nextInt();
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public double leerDouble(String mensaje) {
 
         System.out.print(mensaje);
-        return scanner.nextDouble();
+        return Double.parseDouble(scanner.nextLine());
     }
 
     public String leerTexto(String mensaje) {
 
         System.out.print(mensaje);
-        scanner.nextLine();
         return scanner.nextLine();
     }
 
     public boolean leerBoolean(String mensaje) {
 
         System.out.print(mensaje + " (1 = si, 2 = No): ");
-        int opcion = scanner.nextInt();
+        int opcion = Integer.parseInt(scanner.nextLine());
         return opcion == 1;
     }
 
