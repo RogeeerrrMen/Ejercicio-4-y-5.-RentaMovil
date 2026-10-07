@@ -193,7 +193,6 @@ public class VistaConsola {
 
     public void limpiarEntrada() {
 
-        scanner.nextLine();
     }
 
 
